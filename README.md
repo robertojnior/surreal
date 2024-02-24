@@ -1,2 +1,3 @@
-# surreal
-Real-time polling system.
+# Surreal
+
+Real-time survey system.
