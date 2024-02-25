@@ -1,4 +1,5 @@
 {
+  "extends": "fastify-tsconfig",
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
