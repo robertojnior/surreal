@@ -1,7 +1,9 @@
 import { randomUUID } from 'node:crypto'
 
-import { sql } from 'drizzle-orm'
+import { sql, relations } from 'drizzle-orm'
 import { sqliteTable, text } from 'drizzle-orm/sqlite-core'
+
+import { options } from './options'
 
 export const surveys = sqliteTable('surveys', {
   id: text('id').primaryKey().$defaultFn(randomUUID),
@@ -13,3 +15,7 @@ export const surveys = sqliteTable('surveys', {
     .notNull()
     .default(sql`CURRENT_TIMESTAMP`),
 })
+
+export const surveysRelations = relations(surveys, ({ many }) => ({
+  options: many(options),
+}))
