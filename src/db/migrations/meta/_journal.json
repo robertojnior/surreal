@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1708890055648,
+      "tag": "0000_curved_tomorrow_man",
+      "breakpoints": true
+    }
+  ]
+}
